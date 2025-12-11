@@ -2,11 +2,12 @@
 
 Punto di partenza: 
 
+```
 const literalString = "This is a literal string";
 const stringObject = new String("String created with constructor");
-
 literalString instanceof String; // false, string primitive is not a String
 stringObject instanceof String; // true
+```
 
 * **Hoisting / Temporal Dead Zone / differenze tra var, let, const** — comprendere quando le variabili sono “sollevate”, inizializzate, e perché accedere a `let`/`const` prima della dichiarazione genera un errore. ([GitHub][1])
 * **Scope (global, function, block) e closure** — capire come la visibilità e il ciclo di vita delle variabili cambia a seconda di keyword e contesto. ([GitHub][1])
