@@ -1,3 +1,104 @@
+## Esercizio proposti
+
+```
+function sayHello() {
+  console.log(name);
+  console.log(age);
+  var name = 'Marco';
+  let age = 30;
+}
+sayHello();
+```
+
+```
+for (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
+for (let i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 1);
+}
+```
+
+```
+const person = {
+  name: 'Lautaro',
+  age: 28,
+  greet() {
+    return `Ciao, sono ${this.name}`;
+  },
+  farewell: () => `Un saluto da ${this.name}`
+};
+
+console.log(person.greet());
+console.log(person.farewell());
+```
+
+```
+let a = 10;
+let b = '10';
+
+console.log(a == b);
+console.log(a === b);
+```
+
+```
+const bird = {
+  size: 'small',
+};
+
+const mouse = {
+  name: 'Mickey',
+  small: true,
+};
+
+console.log(mouse[bird.size]);
+console.log(mouse.bird.size);
+```
+
+```
+let c = { greeting: 'Ehilà!' };
+let d;
+
+d = c;
+c.greeting = 'Ciao';
+console.log(d.greeting);
+```
+
+```
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const member = new Person('Lydia', 'Hallie');
+Person.getFullName = function() {
+  return `${this.firstName} ${this.lastName}`;
+};
+
+console.log(member.getFullName());
+```
+
+
+```
+let greeting;
+greetign = {}; 
+console.log(greetign);
+```
+
+
+```
+function bark() {
+  console.log('Woof!');
+}
+
+bark.animal = 'dog';
+console.log(bark.animal);
+```
+
+
+```
+console.log(typeof typeof 1);
+```
 ## 🔎 Concetti fondamentali JS (avanzati)
 
 Live: https://salvatorecapolupo.github.io/jsrunner/
